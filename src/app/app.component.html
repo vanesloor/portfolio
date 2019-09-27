@@ -1,21 +1,67 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div id="page-container">
+   <div id="content-wrap">
+    <nav class="navbar is-fixed-top is-black" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" routerLink="" id="nav-b">
+          <img src="../assets/vanelogo.png" height="28" />
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" (click)="changeStatus()" [ngClass]="navbarStatus ? 'is-active': '' ">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
 
-<router-outlet></router-outlet>
+      <div id="navbarBasicExample" class="navbar-menu" [ngClass]="navbarStatus ? 'is-active': '' ">
+        <div class="navbar-start">
+          <!-- <a class="navbar-item">About Me</a> -->
+          <!-- <a class="navbar-item" routerLink="/projects" (click)="changeStatus()">Projects</a> -->
+          <a class="navbar-item" routerLink="/resume" (click)="changeStatus()">Resume</a>
+        </div>
+      </div>
+    </nav>
+
+
+  <router-outlet></router-outlet>
+
+  </div>
+
+  <footer class="has-background-black has-text-white">
+    <div class="colunms">
+      <div class="column has-text-centered">
+        <p class="">
+          This portafolio was developed using Angular 8 and the Bulma Framework.
+        </p>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column has-text-centered">
+        <div class="circle bg-blue has-text-white">
+          <a href="https://www.facebook.com/vanesloor"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <div class="circle bg-blue has-text-white">
+          <a href="https://github.com/vanesloor"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="circle bg-blue has-text-white">
+          <a href="https://codepen.io/vanesloor"><i class="fab fa-codepen"></i></a>
+        </div>
+        <div class="circle bg-blue has-text-white">
+          <a href="https://www.instagram.com/vanesloor"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="circle bg-blue has-text-white">
+          <a href="https://www.linkedin.com/in/vanessa-lopezo96"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="circle bg-blue has-text-white">
+          <a href="mailto:vanesloor@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column has-text-centered">
+        <a href="https://bulma.io">
+          <img src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma" width="128" height="24">
+        </a>
+      </div>
+    </div>
+  </footer>
+</div>

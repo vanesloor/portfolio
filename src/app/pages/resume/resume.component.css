@@ -1,0 +1,17 @@
+.is-circle{
+  border-radius: 50%;
+}
+.img{
+  margin: 0 auto;
+}
+.underl{
+  border-bottom: 3px solid hsl(348, 100%, 61%);
+  padding-bottom: 6px;
+}
+.border-bottom-black{
+  border-bottom: 2px solid #000;
+}
+.is-rounded{
+    border-radius: 10px;
+    box-shadow: 1px 7px 14px rgba(50, 50, 93, .1), 1px 3px 6px rgba(0, 0, 0, .08);
+}

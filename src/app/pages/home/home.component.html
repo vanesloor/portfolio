@@ -1,0 +1,186 @@
+<div class="container-fluid mt-5">
+  <div class="columns has-background-black" id="landingPage">
+
+    <div class="column p-5 has-text-centered" id="cont">
+      <p class="hey" @fade>Hey,</p>
+      <h1 class="title vanessa" @fade>I'm Vanessa!</h1>
+      <h4 class="portafolio" @fade>Front End Developer</h4>
+
+      <div id=container @fade>
+        <div id=flip>
+          <div><div>JavaScript</div></div>
+          <div><div>CSS</div></div>
+          <div><div>HTML</div></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="columns ">
+    <div class="column p-4 has-text-white has-background-black">
+
+      <!-- <img class="image is-circle is-128x128" src="../assets/vanessa.jpg"> -->
+      <p class="is-size-4 has-text-danger pl-3 pr-3 has-text-weight-semibold is-family-sans-serif">Hi!</p>
+
+      <p class="is-size-5 pl-3 pr-3 is-family-sans-serif">
+        I'm a recent college graduate from the University of Gudalajara living in Allen Park, Michigan.
+        Started out my career developing some projects with LAMP stack, eventually I discovered JavaScript
+        Frameworks and fell in love. I love discovering new tools to make my work easier. Work smarter, not harder!
+        <br />
+        Check out my resume <a routerLink="/resume" class="has-text-danger">here</a>.
+      </p>
+
+    </div>
+    <div class="column">
+      <h1 class="is-size-4 has-text-centered has-text-black">Skills</h1>
+      <div class="columns is-mobile pl-5 pr-5" style="margin: 0 auto;">
+        <div class="column-auto mt-2">
+          <p class="has-text-right mb-1">HTML</p>
+          <p class="has-text-right mb-1">CSS</p>
+          <p class="has-text-right mb-1">JavaScript</p>
+          <p class="has-text-right mb-1">JQuery</p>
+          <p class="has-text-right mb-1">PHP</p>
+          <p class="has-text-right mb-1">Python</p>
+          <p class="has-text-right mb-1">Node.js</p>
+          <p class="has-text-right mb-1">Java</p>
+          <p class="has-text-right mb-1">MySQL</p>
+          <p class="has-text-right mb-1">Angular</p>
+          <p class="has-text-right mb-1">React</p>
+          <p class="has-text-right mb-1">Bootstrap</p>
+          <p class="has-text-right mb-1">Bulma</p>
+          <p class="has-text-right mb-1">Git / Github</p>
+        </div>
+        <div class="column pr-2">
+          <progress class="progress is-small is-danger mt-1 mb-3" value="90" max="100" id="html">90%</progress>
+          <progress class="progress is-small is-danger mt-1 mb-3" value="90" max="100" id="css">90%</progress>
+          <progress class="progress is-small is-danger mt-1 mb-3" value="80" max="100" id="javascript">80%</progress>
+          <progress class="progress is-small is-danger mt-1 mb-3" value="80" max="100" id="jquery">80%</progress>
+          <progress class="progress is-small is-danger mt-1 mb-3" value="80" max="100" id="php">80%</progress>
+          <progress class="progress is-small is-danger mt-1 mb-3" value="30" max="100" id="python">30%</progress>
+          <progress class="progress is-small is-danger mt-1 mb-3" value="30" max="100" id="node">30%</progress>
+          <progress class="progress is-small is-danger mt-1 mb-3" value="35" max="100" id="java">35%</progress>
+          <progress class="progress is-small is-danger mt-1 mb-3" value="75" max="100" id="mysql">75%</progress>
+          <progress class="progress is-small is-danger mt-1 mb-3" value="60" max="100" id="angular">60%</progress>
+          <progress class="progress is-small is-danger mt-1 mb-3" value="40" max="100" id="react">30%</progress>
+          <progress class="progress is-small is-danger mt-1 mb-3" value="95" max="100" id="Bootstrap">95%</progress>
+          <progress class="progress is-small is-danger mt-1 mb-3" value="95" max="100" id="bulma">95%</progress>
+          <progress class="progress is-small is-danger mt-1 mb-3" value="80" max="100" id="git">80%</progress>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="columns mt-4 mb-2">
+    <div class="column has-text-centered">
+      <h1 class="is-size-3 has-text-black">My recent Work</h1>
+      <p>Here are some of my recent web projects.</p>
+      <br />
+      <button class="button is-danger is-rounded is-small" disabled>All Projects</button>
+    </div>
+  </div>
+
+  <div class="columns p-3 equal"  [@scrollAnimation]="state">
+    <div class="column equal">
+      <div class="columns is-mobile equal">
+        <div class="column">
+
+          <div class="card">
+            <div class="card-image p-1">
+              <figure class="image">
+                <img src="../assets/vane-cover.png" alt="Placeholder image">
+              </figure>
+            </div>
+
+            <div class="card-content">
+              <div class="content">
+                <p>
+                  This portafolio handcrafted with Angular and Bulma.</p>
+                  <a routerLink="/seven">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+
+          <div class="card">
+            <div class="card-image p-1">
+              <figure class="image">
+                <img src="../assets/pacifica.png" alt="Placeholder image">
+              </figure>
+            </div>
+
+            <div class="card-content">
+              <div class="content">
+                <p>
+                  Ecomerce web app developed from scratch using Bootstrap and PHP. </p>
+                  <a routerLink="/two">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column equal">
+      <div class="columns is-mobile equal">
+        <div class="column">
+          <div class="card">
+
+            <div class="card-image p-1">
+              <figure class="image">
+                <img src="../assets/pacifica.png" alt="Placeholder image">
+              </figure>
+            </div>
+
+            <div class="card-content">
+              <div class="content">
+                <p>Web app for wholesale sales.</p>
+                <a routerLink="/three">Read more</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+
+            <div class="card-image p-1">
+              <figure class="image">
+                <img src="../assets/udgc.png" alt="Placeholder image">
+              </figure>
+            </div>
+
+            <div class="card-content">
+              <div class="content">
+                <p>
+                Comprehensive Information System for the
+                Academic Management</p>
+                <a routerLink="/six">Read more</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+    <div class="columns">
+      <div class="column pl-5 pr-5">
+        <h3 class="is-size-4 has-text-black mb-2">More about me</h3>
+        <p class="mb-4">I am very interested in music, technology and crafts. When tumblr was one of the most
+        popular social websites, I became very interested in web programming. I found myself trying to edit
+        and understand all those weird letters that made my blog posts look so neat. The tumblr tutorial for
+      creating your own themes was my first coding experience. Now I can't imagine myself doing any other job.
+     </p>
+      </div>
+      <div class="column pl-5 pr-5 has-background-black has-text-centered">
+        <h2 class="has-text-white">Listen to this when your coding!</h2>
+        <br />
+        <iframe src="https://open.spotify.com/embed/playlist/18aemioef0yz2ctwsGBAjJ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+    </div>
+  </div>

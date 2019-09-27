@@ -1,0 +1,8 @@
+.hoverl{
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+   transition: all 500ms;
+}
+.hoverl:hover{
+  border-bottom: 2px solid black;
+}
